@@ -1,0 +1,107 @@
+
+.Main {
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://i.pinimg.com/564x/a5/cc/aa/a5ccaa88323f5c4643bda01a1927f84c.jpg");
+    background-attachment: fixed;
+}
+.Search {
+    background: rgba(32, 32, 32, 0.856);
+    height: 10vh;
+    display: flex;
+    position:sticky; 
+    top:0;
+    justify-content: center;
+    align-items: center;
+}
+#searchInput {
+    width: 60%;
+    height: 40px;
+    font-size: large;
+    margin: 3px;
+    padding: 3px 3px 3px 10px;
+}
+.TicketsCon {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.Info {
+    margin: 10px 10px 10px 0;
+    padding: 10px 10px 10px 0;
+    color: #fff;
+}
+.ticket {
+    background: rgba(255, 255, 255, 0.719);
+    color: black;
+    box-shadow: rgba(255, 255, 255, 0.719) 0px 0px 5px 5px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+.hiddenTicket {
+    display: none;
+}
+.result {
+    font-size: x-large;
+    margin: 10px;
+    padding: 10px;
+}
+
+.restoreHiddenTickets{
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+    color: #fff;
+    transition: border 1s;
+    margin: 5px;
+    padding: 5px;
+}
+.restoreHiddenTickets:hover {
+    border: 1px solid #fff;
+}
+
+.hideTicketButton {
+    float: right;
+    font-weight: 800;
+    background: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0);
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+.hideTicketButton:hover {
+    color: black;
+    border: 1px solid black;
+}
+.ticket-title {
+    font-weight: bold;
+    font-size: x-large;
+    margin: 10px 0 20px 0;
+}
+.ticket-content {
+    font-size: large;
+    line-height: 27px;
+    margin: 0 0 20px 0;
+}
+.ticket-userEmail {
+    margin: 0 10px 0 0;
+}
+.ticket-creationTime {
+    margin: 0 0 0 10px;
+}
+.ticket-labels {
+    display: flex;
+    justify-content: flex-end;
+}
+.label {
+    font-weight: bold;
+    background-color: rgba(121, 121, 121, 0.507);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 5px 5px 0 5px;
+    padding: 8px 15px;
+}

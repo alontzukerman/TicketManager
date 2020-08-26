@@ -1,0 +1,7 @@
+{
+    "todo-tree.tree.showScanModeButton": false,
+    "eslint.alwaysShowStatus": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+}
