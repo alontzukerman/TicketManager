@@ -3,6 +3,8 @@ import React from 'react';
 function Ticket({ ticket, onClick }) {
   const classNameTicket = ticket.hide ? 'hiddenTicket' : 'ticket'; // changing className if hidden
 
+  const creationDate = new Date(ticket.creationTime);
+
   return (
     <div className={classNameTicket}>
       <button
@@ -18,7 +20,7 @@ function Ticket({ ticket, onClick }) {
       <div className="ticket-content">{ticket.content}</div>
       <span className="ticket-userEmail">{`By ${ticket.userEmail}`}</span>
       <span> | </span>
-      <span className="ticket-creationTime">{ticket.creationTime}</span>
+      <span className="ticket-creationTime">{creationDate.toString()}</span>
       {
                 ticket.labels
                 && (

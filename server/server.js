@@ -1,4 +1,5 @@
 const app = require('./app');
+const path = './data.json';	
 
 function checkHttps(request, response, next) {
   // Check the protocol — if http, redirect to https.
